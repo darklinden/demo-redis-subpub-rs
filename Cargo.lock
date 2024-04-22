@@ -104,9 +104,11 @@ name = "demo-redis-subpub"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "arc-swap",
  "futures-util",
  "log",
  "redis",
+ "serde_json",
  "tokio",
  "tokio-stream",
  "tokio-util",

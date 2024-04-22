@@ -17,3 +17,5 @@ tokio-stream = "0.1.8"
 futures-util = { version = "0.3.17", features = ["std", "sink"] }
 log = "0.4.21"
 anyhow = "1.0.82"
+arc-swap = "1.7.1"
+serde_json = "1.0.116"
