@@ -1,0 +1,14 @@
+version: "3"
+services:
+  demo-redis:
+    container_name: "demo-redis"
+    image: redis:7.0.9-alpine
+    restart: always
+    ports:
+      - "127.0.0.1:6379:6379"
+    command: redis-server --save "" --appendonly no --loglevel debug
+    logging:
+      driver: "local"
+      options:
+        max-file: 5
+        max-size: 10m
